@@ -1,0 +1,52 @@
+title: Knowledge Crystal
+tagline: "AI Engineer building reliable LLM & GraphRAG systems for teams that can't afford hallucinations"
+description: "AI Engineer building reliable LLM & GraphRAG systems for teams that can't afford hallucinations"
+author: Denson
+email: denson@knowledgecrystal.com
+url: https://knowledgecrystal.com
+baseurl: ""
+
+theme: minima
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      layout: "project"
+
+# Permalink structure
+permalink: /blog/:title/
+
+# Minima theme settings
+minima:
+  skin: light
+  date_format: "%B %d, %Y"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md

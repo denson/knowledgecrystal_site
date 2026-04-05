@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Hi, I'm Denson</h1>
+    <p class="hero-tagline">{{ site.tagline }}</p>
+    <p class="hero-intro">
+      Building the infrastructure and systems that make AI reliable, trustworthy, and valuable for teams and organizations that can't afford hallucinations.
+    </p>
+    <div class="hero-cta">
+      <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-primary">Learn About Me</a>
+      <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn btn-secondary">See My Work</a>
+    </div>
+  </div>
+</div>
+
+<section class="featured-projects">
+  <div class="section-header">
+    <h2>Featured Projects</h2>
+    <p class="section-subtitle">Recent work in LLM systems and knowledge extraction</p>
+  </div>
+
+  <div class="projects-grid">
+    {% for project in site.projects limit: 3 %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/projects' | prepend: site.baseurl }}" class="btn btn-outline">View All Projects</a>
+  </div>
+</section>
+
+<section class="latest-posts">
+  <div class="section-header">
+    <h2>Latest Articles</h2>
+    <p class="section-subtitle">Thoughts on AI engineering, reliability, and building with confidence</p>
+  </div>
+
+  <div class="posts-list">
+    {% for post in site.posts limit: 3 %}
+      <article class="post-preview">
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <span class="post-reading-time">
+            {% assign words = post.content | split: " " | size %}
+            {% if words < 360 %}
+              1 min read
+            {% else %}
+              {{ words | divided_by: 180 }} min read
+            {% endif %}
+          </span>
+        </div>
+        <h3 class="post-title">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+        <p class="post-excerpt">{{ post.excerpt | strip_html }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read more →</a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-outline">View All Articles</a>
+  </div>
+</section>

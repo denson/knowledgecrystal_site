@@ -1,0 +1,22 @@
+<article class="project-card">
+  <div class="project-card-content">
+    <h3 class="project-card-title">
+      <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+    </h3>
+    <p class="project-card-description">{{ project.description }}</p>
+
+    {% if project.tags %}
+      <div class="project-card-tags">
+        {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="project-card-footer">
+      <a href="{{ project.url | prepend: site.baseurl }}" class="project-card-link">
+        Learn more →
+      </a>
+    </div>
+  </div>
+</article>

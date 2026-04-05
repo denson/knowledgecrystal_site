@@ -1,0 +1,23 @@
+# Dependencies
+/vendor/
+.bundle/
+Gemfile.lock
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Local testing
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Ruby
+*.gem
+.ruby-version
+.rspec

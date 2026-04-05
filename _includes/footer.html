@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">{{ site.title }}</h3>
+        <p class="footer-tagline">{{ site.tagline }}</p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ '/projects' | prepend: site.baseurl }}">Projects</a></li>
+          <li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-heading">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="mailto:{{ site.email }}">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2026 {{ site.author }}. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

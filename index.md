@@ -9,18 +9,18 @@ permalink: /
   <p class="tagline">AI Engineer building reliable LLM & GraphRAG systems for teams that can't afford hallucinations</p>
   <div class="cta-buttons">
     <a href="/about.html" class="btn btn-primary">Learn More</a>
-    <a href="/projects.html" class="btn btn-secondary">View Projects</a>
+    <a href="/blog.html" class="btn btn-secondary">Read the Blog</a>
   </div>
 </div>
 
-## Featured Work
+## What I Do
 
-I specialize in building production-ready LLM systems and knowledge graph retrieval architectures that deliver reliable, grounded answers without the hallucinations that plague modern AI applications. With expertise in GraphRAG, semantic search, and system design, I help teams deploy intelligent systems that actually work.
+I specialize in building production-ready LLM systems and knowledge graph retrieval architectures that deliver reliable, grounded answers. I help teams deploy intelligent systems that actually work — without the hallucinations that plague modern AI applications.
 
 <div class="grid">
   <div class="card">
     <h3>LLM Systems Engineering</h3>
-    <p>Building robust AI systems that balance performance with reliability. I focus on system design patterns, prompt engineering, and evaluation frameworks that ensure consistent outputs.</p>
+    <p>Designing robust AI systems that balance performance with reliability. System design patterns, prompt engineering, and evaluation frameworks for consistent outputs.</p>
     <span class="card-tag">LLMs</span>
     <span class="card-tag">Prompting</span>
     <span class="card-tag">RAG</span>
@@ -28,7 +28,7 @@ I specialize in building production-ready LLM systems and knowledge graph retrie
 
   <div class="card">
     <h3>GraphRAG Architecture</h3>
-    <p>Designing knowledge graph systems that provide precise, contextual information retrieval. Using graph databases and structured knowledge representations to reduce hallucinations.</p>
+    <p>Knowledge graph systems that provide precise, contextual information retrieval. Using structured knowledge representations to ground AI responses and reduce hallucinations.</p>
     <span class="card-tag">GraphRAG</span>
     <span class="card-tag">Knowledge Graphs</span>
     <span class="card-tag">Semantic Search</span>
@@ -36,15 +36,21 @@ I specialize in building production-ready LLM systems and knowledge graph retrie
 
   <div class="card">
     <h3>Production Deployment</h3>
-    <p>Taking models from research to production with proper monitoring, evaluation, and iteration. I help teams scale AI systems safely and reliably in real-world environments.</p>
+    <p>Taking models from research to production with proper monitoring, evaluation, and iteration. Scaling AI systems safely and reliably in real-world environments.</p>
     <span class="card-tag">Deployment</span>
     <span class="card-tag">MLOps</span>
     <span class="card-tag">Evaluation</span>
   </div>
 </div>
 
-## Latest Articles
+## Latest from the Blog
 
-<div>
-  <p><a href="/blog.html" class="btn btn-secondary">View all articles →</a></p>
+{% for post in site.posts limit:3 %}
+<div class="card" style="margin-bottom: 1rem;">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  <small>{{ post.date | date: "%B %d, %Y" }}</small>
 </div>
+{% endfor %}
+
+<a href="/blog.html" class="btn btn-secondary">All articles →</a>

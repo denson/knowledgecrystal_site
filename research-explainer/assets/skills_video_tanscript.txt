@@ -1,0 +1,1552 @@
+https://www.youtube.com/watch?v=0cVuMHaYEHE
+
+
+
+Skills launched in October, everything changed since
+0:00
+Anthropic launched skills back in
+0:01
+October and what has changed since then
+0:03
+in the rest of the world of LLMs in
+0:05
+agents in openclaw has shifted how we
+0:08
+think about skills. But I don't think
+0:09
+we've really caught up on that because
+0:10
+most of the time when we're talking
+0:12
+about agents we talk about openclaw.
+0:13
+What we don't realize is that skills are
+0:15
+becoming the substrate for a lot of the
+0:18
+correct persistent accurate predictable
+0:21
+outcomes that businesses and frankly we
+0:23
+people need to get stuff done. But we
+0:26
+keep thinking of skills as those
+0:28
+individual things that launched back in
+0:30
+the fall. And so this is really a get
+0:32
+you up to speed on agent readable skills
+0:36
+video. If this is a new concept to you,
+0:38
+stick around. We're going to talk
+0:40
+through the key changes that have
+0:41
+unlocked since October. And we're also
+0:44
+going to be talking about practical ways
+0:46
+you can build skills. And yes, I have a
+0:48
+skills repo. It's not just going to be
+0:50
+my skills. We're going to have folks
+0:51
+from the community throwing skills in
+0:53
+there. And it's going to be a place
+0:54
+where we can start to learn together how
+0:57
+to build skills that help us all get
+0:58
+meaningful work done. All right. What
+1:01
+changed first? Number one, the big
+1:03
+trend. Skills went from personal
+1:05
+configuration 6 months ago to
+1:07
+organizational infrastructure today.
+1:09
+Back in October, a skill was something
+1:10
+you built for yourself. You typed in the
+1:12
+prompt. You did the thing. Now, team and
+1:14
+enterprise admins are rolling out skills
+1:17
+workplacewide. They're treated as a
+1:19
+single upload. They're version
+1:20
+controlled. They're available in the
+1:22
+sidebar and callable, inside Excel,
+1:24
+inside PowerPoint, inside Claude, inside
+1:27
+C-Pilot. Your organization's methodology
+1:30
+is no longer individuals carry skills in
+1:32
+their head. It's now how can we start to
+1:34
+think about skills as something that is
+1:36
+agent readable and human readable across
+1:38
+the entire infrastructure layer. Second,
+1:41
+the caller of skills has changed. I
+1:43
+think we slept on this one. Humans were
+1:46
+the caller of skills in October by and
+1:48
+large. Now the majority of skills are
+1:50
+called by agents. Why? Because agents
+1:53
+can make hundreds of skill calls over
+1:55
+the course of a single run. We humans
+1:56
+were calling maybe a few skills in a
+1:58
+particular conversation. The math just
+2:00
+doesn't math for humans. We need to
+2:02
+start thinking about our skills as agent
+2:04
+first. Third, skills are not a developer
+2:07
+thing. This is something that people
+2:09
+kind of had their minds blown by when I
+2:11
+talked about skills when they first came
+2:12
+out, and I'm just going to underline it.
+2:14
+They're not meant to just live in the
+2:16
+terminal. They're not meant to just be
+2:17
+skills to execute code with. They are
+2:20
+meant to be things that you can use for
+2:22
+the rest of your business life and
+2:24
+frankly the rest of your personal life.
+2:25
+And big companies are agreeing, right?
+2:27
+So Anthropic and Microsoft have a
+2:29
+partnership to bring skills to co-pilot.
+Four big trends reshaping the skills landscape
+2:31
+You have skills appearing when OpenAI
+2:32
+makes releases because skills is now an
+2:35
+open standard. Fundamentally, you need
+2:37
+to start thinking of skills as a common
+2:41
+infrastructure vehicle that is just
+2:43
+going to underly a lot of the way AI
+2:45
+works for the foreseeable future.
+2:48
+Fourth, skills becoming a cross-industry
+2:50
+standard means that we need to think
+2:52
+about the way alpha works in the age of
+2:54
+AI a lot differently. We're used to the
+2:56
+concept of alpha being closed source
+2:59
+where open- source stuff just isn't
+3:01
+valuable. I talked a few days ago about
+3:03
+the idea that one of the places where
+3:06
+you see extraordinary value if you're an
+3:08
+engineer right now is by open sourcing a
+3:10
+project you're building that is in the
+3:11
+agent AI space because then everybody
+3:14
+can see it see that you're high-grade
+3:15
+talent it functions as a resume then
+3:17
+they make you a big aqua hire offer in
+3:19
+the same way you would think that skills
+3:22
+as markdown would be something that a
+3:24
+lot of people would want to keep closed
+3:26
+source but what you see is that people
+3:28
+are trading skills like they're trading
+3:29
+baseball cards at camp we're all
+3:30
+learning together. We're figuring out
+3:32
+how to make skills work for our agents
+3:35
+as a community. I don't just mean my
+3:37
+community. I mean the internet as a
+3:38
+whole. And we are learning how to make a
+3:42
+lowly markdown file actually function as
+3:45
+an agent callable context layer for the
+3:48
+work that we want to get done. We have
+3:50
+to learn it collectively because the
+3:52
+best practices are discoverable, not
+3:54
+known. Right? When I got a CDROM from
+3:57
+Microsoft and it had the entire program
+3:59
+printed on it back in the '90s, the
+4:01
+program was known. You got the
+4:02
+instruction book. With LLMs, we all
+4:05
+discover the instruction book together.
+4:06
+And that goes for how we use them with
+4:08
+tools and skills as well. We all
+4:10
+discover it together. And so it works
+4:11
+faster if we discover it in a community.
+4:14
+And so that's what I want to talk about.
+4:15
+I want to talk about specific examples
+4:17
+of people who are using skills today,
+4:19
+how they're using them in ways that make
+4:21
+sense in this agentic future. how you
+4:22
+start to construct agentic skills, some
+4:25
+of the things that I am seeing that no
+4:26
+one else is talking about and kind of
+4:28
+why that is. And then I want to get into
+4:30
+some concrete actionable steps, things
+4:32
+you can do to level up your skills
+4:34
+practice. Okay, first just the 10-second
+4:37
+version. A skill is a folder with a text
+4:39
+file in it. That is it. It has one
+4:41
+required file, just skill.mmarkdown. And
+4:44
+it just has two parts, right? It needs
+4:45
+to have a little bit of metadata at the
+4:47
+top and it needs to have your
+4:48
+methodology and instructions below. Now,
+4:50
+in this video, there are some gotchas,
+4:52
+right? I'm going to get into some of the
+4:53
+gotchas that you run into when you start
+4:55
+to build these files and things that we
+4:57
+know that break based on the community
+4:59
+of learning we've had over the last 6
+Skills compound, prompts evaporate
+5:01
+months. But that's the simple version,
+5:03
+right? That's what it does. And all it
+5:05
+does is it encodes a series of plain
+5:08
+English instructions that give an LLM
+5:10
+context to do something useful for you
+5:13
+with a particular set of inputs in a
+5:15
+predictable way. So, this is a very
+5:18
+simple primitive. It's simple and yet it
+5:20
+has so much power because you can make a
+5:22
+skill about just about anything. And so
+5:24
+you might wonder what are people making
+5:26
+with these skills? Well, the most common
+5:28
+production pattern in Claude right now
+5:29
+is what I would call the specialist
+5:31
+stack. So a developer can drop a folder
+5:33
+full of skills into a project. One skill
+5:35
+might turn vague instructions into a
+5:37
+PRD. Another one decomposes the PRD into
+5:39
+GitHub issues. Another one helps you
+5:41
+write the tests for the code. You get
+5:43
+the idea. And the whole concept of this
+5:45
+is that it that the skill takes a lot of
+5:48
+the nuance and the pain out of prompting
+5:50
+which is something I called out at the
+5:51
+top when skills came out is that this
+5:53
+loosens up a lot of the requirement
+5:54
+around strict prompting that we had in
+5:56
+2025 because now the developer that
+5:58
+drops that skill pack in as their
+6:00
+specialist substrate basically tells the
+6:02
+agent in cursor hey build me this
+6:05
+feature and then cursor can invoke the
+6:07
+skills with their chosen LLM and just
+6:09
+get to work. In other words, the agent
+6:11
+doesn't need specialist direction
+6:12
+because the specialist direction is in
+6:14
+the file. Now, you can take this right
+6:16
+out of the developer context and do a
+6:18
+lot of other things with it. I want to
+6:19
+give you an example of a real estate GP
+6:21
+uh known as Texas Paintbrush on X who
+6:24
+built the same pattern for operations at
+6:26
+his business. He has over 50,000 lines
+6:29
+of skills across 50 repositories
+6:32
+covering rent ro standardization, comps
+6:34
+analysis, cash flow handling, handoff
+6:37
+protocols between team members, the
+6:39
+agent running. And what's beautiful
+6:40
+about it is yes, the agent can run and
+6:43
+call those skills and predictably do
+6:45
+operations in his business. But it turns
+6:47
+out that writing all that stuff down
+6:48
+also helps the humans. When you onboard
+6:50
+someone new, there's a fantastic context
+6:52
+layer of skills for them to dig into to
+6:54
+understand what the heck is going on.
+6:55
+The methodology doesn't live in
+6:56
+someone's mind anymore. It lives in a
+6:58
+repository. And it gets more
+The specialist stack pattern in production
+7:00
+sophisticated than that. You can have
+7:02
+orchestrator skills and more
+7:03
+sophisticated teams are building them
+7:05
+now. So a good example uh this one's
+7:08
+documented all over Reddit. You can have
+7:10
+a skill called something like
+7:11
+orchestrator for lack of a better term
+7:13
+that analyzes any incoming request and
+7:16
+then spawns different sub aents to take
+7:18
+care of that request based on skills
+7:21
+that it learns to call from that master
+7:23
+orchestrator skill. Right? It might
+7:25
+tackle research. It might tackle coding.
+7:26
+It might tackle UI or docs. And so a
+7:29
+single highle request for an agent can
+7:30
+get reliably sort of phone freed out to
+7:32
+a bunch of sub aents to get work done
+7:35
+because the orchestrator skill makes
+7:37
+that predictable. And the beautiful
+7:39
+thing about skills becoming a substrate
+7:41
+is that when you start to work with
+7:42
+them, you get the benefit of the entire
+7:45
+ecosystem coalesing around them. So they
+7:47
+work the same way in Excel, as they work
+7:49
+in PowerPoint, as they work in C-pilot,
+7:51
+as they work in Claude, as they work in
+7:52
+Chpt. Everybody uses them and so it's
+7:55
+worth it. Now, if we circle back to the
+7:56
+prompt pattern, I talked a little bit
+7:58
+earlier in this video about the idea
+7:59
+that in October, prompts were something
+8:02
+that became somewhat less important for
+8:05
+individual tasks because we could get
+8:07
+predictable results by taking our best
+8:09
+work and packaging it into skills. Still
+8:11
+today, people will take examples of
+8:13
+their best work and they will say,
+8:14
+"Please turn this into a skill so I can
+8:16
+produce this output reliably. I've done
+8:18
+it myself. I showed you examples, etc."
+8:20
+Well, here's the thing that I want to
+8:22
+underline for you. We have had six
+8:24
+months of this. The people who have been
+8:26
+building with skills have been
+8:28
+compounding them, right? Because you can
+8:29
+improve your skills. You can say, "Okay,
+8:31
+this this isn't right. Please update
+8:32
+your skill file with X or Y because I
+8:34
+don't like this." And you're honing and
+8:36
+you're refining what that skill can
+8:39
+produce. And the people who have been
+8:40
+prompting all along are just copying and
+8:42
+pasting the same stuff. In other words,
+8:45
+skills compound for you. Skills compound
+8:48
+by the weight of industry investment in
+8:49
+the ecosystem and by the weight of your
+8:51
+own commitment to having a predictable
+8:54
+pattern for doing something and writing
+8:56
+it down. Prompts don't compound in the
+8:59
+same way. Prompts are excellent. There
+9:01
+is still value in learning how to prompt
+9:03
+well. No doubt about it. But prompts are
+9:05
+becoming the basic 4x4 building block of
+9:09
+Lego for the rest of the world. You
+9:10
+still have to have the specialized Lego
+9:12
+blocks to build the rest of the castle
+9:14
+that you want to have. In the same way,
+9:17
+you're going to need to figure out how
+9:19
+to go from just prompting to skills that
+9:21
+you can reuse. And so, if this is
+9:23
+something that's a new concept for you,
+9:24
+we're going to just leaprog you through
+9:27
+and get you to agent readable skills and
+Real estate GP with 50,000 lines of skills
+9:30
+some of the common pitfalls along the
+9:31
+way. So, how do you build a skill that
+9:32
+works? Number one, most important thing,
+9:34
+the description is where most skills go
+9:37
+to die. What makes a bad description is
+9:40
+vagueness. If you write it helps with
+9:42
+competitive analysis, that tells clot
+9:44
+absolutely nothing useful. It's too
+9:47
+diffuse to match to anything very
+9:49
+specific and it triggers on anything
+9:51
+tangential. It's just not very helpful.
+9:53
+A good description names the document
+9:55
+types or the artifact types it produces.
+9:57
+It includes actual trigger phrases like
+10:00
+analyze our competitors or who are the
+10:02
+players in this market. It states what
+10:04
+the output should look like. Anthropic's
+10:06
+own guidance is actually very explicit
+10:08
+here. On average, skills tend to
+10:10
+undertrigger versus overt trigger. And
+10:12
+so, they want you to write descriptions
+10:14
+that make the skill pushy. So, Claude is
+10:18
+confident to use it. Now, this is where
+10:20
+I list one of those gotchas I was
+10:21
+talking about. A technical constraint
+10:24
+worth knowing is that a skill
+10:26
+description must must must stay on a
+10:29
+single line. If a code formatter were to
+10:31
+break the skill description into more
+10:34
+than one line, Claude will not read that
+10:37
+correctly. Claude will not read the
+10:38
+second line and you're going to be in
+10:40
+trouble. Now we come to the next part,
+10:41
+the methodology body. Right? This is
+10:43
+where you say once you invoke the skill,
+10:45
+what are we going to do with it? It
+10:46
+needs five things. First, it needs
+10:49
+reasoning, not just steps. So give
+10:52
+Claude your frameworks, give it your
+10:54
+quality criteria, give it the principles
+10:56
+behind your decisions. A skill that only
+10:58
+has linear procedures is a very, very
+11:01
+brittle skill. It's going to break when
+11:02
+it hits a case that it doesn't
+11:04
+recognize. Reasoning helps Claude
+11:06
+generalize in this domain. Number two,
+11:08
+you need a specified output format, not
+11:11
+produce a summary that's too vague. Is
+11:13
+it markdown? Is it an Excel? Is it a
+11:15
+PDF? Does it have exact fields or
+11:18
+sections you want to cover? Be specific
+11:20
+here or else you're going to regret it.
+11:22
+Three, please, please, please give
+11:24
+explicit edge cases to Claude.
+11:26
+Everything that a human handles through
+11:28
+common sense, you need to write down. Do
+How to build a skill that actually works
+11:31
+not do not assume that Claude is going
+11:33
+to work like an experienced human and
+11:35
+just know those edge cases. Claude will
+11:37
+not do that. You need to write your edge
+11:38
+cases down. Number four, make sure that
+11:41
+you give Claude an example to pattern
+11:44
+match against so it knows what good
+11:46
+looks like. That's why you can have more
+11:48
+than one file in the skills folder. And
+11:51
+I know this is going to sound
+11:52
+counterintuitive because I just listed a
+11:54
+bunch of things. Keep the skill lean. A
+11:57
+short skill that fires reliably is going
+11:59
+to outperform a long skill with
+12:01
+competing instructions. And so you also
+12:03
+need to be disciplined to recognize when
+12:07
+enough is enough. And I'm going to give
+12:09
+you some tips like I've written a lot of
+12:10
+skills. You should not under most
+12:13
+circumstances be spending more than 100
+12:17
+or 150 lines in your core Claude skills
+12:19
+file. like and you can have a couple of
+12:21
+examples in in other files in the
+12:23
+folder, but it should not be a big
+12:25
+folder that Claude has to get into and
+12:27
+bloat up its context window with. And
+12:29
+you should be investing
+12:31
+80% of your attention in that
+12:33
+description field to make sure it
+12:34
+triggers, right? And then the other 20%
+12:36
+in being very very clear with the
+12:37
+general purpose reasoning and making
+12:40
+sure that Claude understands what to do
+12:42
+and how to reason across this body once
+12:44
+it accurately triggers. And then
+12:45
+everything else, I mean, that can go
+12:46
+into the last few percentage points.
+12:48
+Like you can say, okay, here's some edge
+12:49
+cases. Here's a good example. And don't
+12:51
+overdo it because those are the things
+12:53
+that cause Claude to accurately trigger.
+12:55
+And by the way, I say Claude because
+12:57
+it's native to Claude, but that's the
+12:59
+same for chat GPT. It's the same for
+13:00
+co-work. It's the same anywhere you're
+13:02
+going to invoke it. You need to be clear
+13:04
+in your trigger and you need to be clear
+13:07
+in the general purpose reasoning so that
+13:10
+the LLM knows how to reason across the
+13:11
+space. Now, here's the thing that people
+13:13
+aren't paying attention to. Remember how
+13:15
+I said one of the biggest changes for
+13:17
+skills is that they are now more agent
+13:20
+callable than human callable. Well, that
+13:22
+means failures are different now because
+13:24
+in the past when you saw something drift
+13:27
+as a human, you could correct it right
+13:28
+then and adjust the skill. I actually
+13:30
+talked about that earlier in this video.
+13:32
+Now, the agent is going to try to use
+13:36
+the skill to get a job done and there
+13:38
+may be no recovery loop if the agent
+13:41
+gets it wrong and that can be very
+13:42
+expensive. And so one of the things that
+13:44
+you need to do, especially if you are
+13:46
+considering using agents to drive
+13:48
+skills, is that you need to start
+13:50
+quantitatively testing the performance
+13:53
+of your skills to make sure they are
+13:54
+ready for agents. You need to have a
+13:57
+test suite that you run against your
+The single-line description gotcha
+14:00
+skill. You need to change it. You need
+14:01
+to have a basket of tests. The more
+14:03
+seriously you take your agent pipeline,
+14:05
+the more seriously you should take the
+14:07
+ability of your agents to call useful
+14:09
+tools. And skills are king among useful
+14:12
+tools. You should be able to give your
+14:14
+agents skills that are battlehearted.
+14:17
+They should be tested and they should be
+14:19
+quantified. And if you don't know what
+14:20
+that means, I'm kind of describing it
+14:22
+for you. You need to run a basket of
+14:24
+tests, quantify the results, change the
+14:27
+skill like a version number, and then
+14:29
+come back and see if it does a better
+14:31
+job. Skills don't always change in
+14:33
+predictable ways. The wording in skills
+14:36
+triggers certain parts of a transformer
+14:40
+model's latent space and enables it to
+14:43
+respond in ways that are hard to
+14:45
+predict. And so when you start to mess
+14:47
+around with how do I say beautiful for a
+14:49
+PowerPoint, for example, you may need to
+14:52
+run through three or four different
+14:54
+wordings to get the exact response set
+14:57
+that matches your company's aesthetic,
+15:01
+even with examples. And you know what?
+15:03
+take the time to do it because if you
+15:05
+get it right and you're producing a 100
+15:07
+powerpoints a week as a company, it's
+15:09
+going to save you a lot of time. Now, I
+15:11
+want to go a little bit farther on
+15:12
+agent-based design because I don't think
+15:13
+we name this enough. If you're designing
+15:15
+skills specifically for agents, you're
+15:17
+not just testing them. You're starting
+15:19
+to think about agents as the primary
+15:21
+caller. And that changes how you think
+15:23
+about the structure of the sections of
+15:26
+the skills. The description becomes a
+15:27
+routing signal, not a label. You are
+15:29
+basically telling the agent through that
+15:31
+little description where it should go in
+15:33
+the workflow. So, your description
+15:35
+should contain wording that matches the
+15:38
+outcome the agent has been given to look
+15:40
+for in its goal, right? You need to tie
+15:41
+that together more specifically. Number
+15:43
+two, agents need contracts. They're gold
+15:46
+against contracts. They think in terms
+15:48
+of contracts. You need to frame the
+15:50
+output of the skill as a contract. And
+15:54
+think of this if you're a developer as
+15:55
+an API contract where it's like this is
+15:57
+the SLA. this is what this particular
+15:59
+thing gives you. Uh these are the
+Methodology body: reasoning over procedures
+16:00
+controllable fields etc. In the same
+16:02
+way, the agent needs to look at the
+16:03
+skill and says this is what I'm going to
+16:05
+get with this skill. This is what I
+16:07
+won't get and this is what this skill
+16:09
+will allow me to accomplish and this is
+16:11
+where I can go against a particular goal
+16:13
+with this skill. That is what I mean by
+16:14
+a contract. It's essentially a
+16:17
+declarative agreement that the agent can
+16:20
+easily discover about the skill that
+16:24
+allows the agent to make a correct
+16:25
+choice confidently. Third, and we didn't
+16:28
+think about this in October because we
+16:30
+didn't have agents the same way.
+16:31
+Composability needs to be at the core of
+16:34
+agent first skills. In other words,
+16:36
+don't think of the skill as solving a
+16:38
+problem, per se. Think of the skill as
+16:40
+needing to produce an output that will
+16:42
+need to be handed off down the chain to
+16:44
+an agent or sub agent that's doing
+16:46
+something else with it. If you're going
+16:48
+through a business process where a
+16:50
+ticket is having to go through multiple
+16:51
+steps and an agent is having to process
+16:53
+it, you need to think about at each
+16:55
+step, if the agent calls a skill, is the
+16:57
+output generated by the agent working
+16:59
+with that skill something that is
+17:00
+correct to hand to the next agent or
+17:04
+correct to hand down the process for the
+17:07
+agent to then read, understand, and call
+17:08
+another skill if necessary. think
+17:11
+through the endtoend experience of
+17:14
+agents and skills because if you don't
+17:17
+if you just think about it as one
+17:18
+output, you're likely to have breaks in
+17:20
+your handoffs. Last but not least, and I
+17:22
+say this a lot, hard wiring matters. If
+17:25
+you are trying to hardwire agentic
+17:28
+behavior, please use scripts. Don't use
+17:32
+skills. Skills are just plain English.
+17:34
+Agents will respect them. Agents will
+17:36
+often follow them. But if you really
+17:38
+want to hardwire, go more deterministic.
+17:41
+Go into the scripting world. And don't
+17:42
+be shy about it. It doesn't mean you're
+17:44
+bad at AI. It just means you know what
+17:46
+AI can do. Part of why agents are
+17:48
+powerful is they are general purpose
+17:49
+tools to solve larger sets of problems.
+17:52
+That doesn't mean we can't invoke
+17:54
+deterministic tools along the way as a
+17:56
+part of our overall solution. So that's
+17:57
+how we think about agents and skills.
+17:59
+How do we think about teams and skills?
+Agent-first skill design principles
+18:01
+And this is actually important because
+18:02
+we're doing teams with humans and agents
+18:05
+together now, right? Our teams are now
+18:07
+composed of a mixture of artificial
+18:10
+intelligence and humans for a lot of our
+18:11
+business process. In that world, what
+18:14
+skills do is they act as immediately
+18:17
+actionable context. I am not the person
+18:19
+who's going to sit here and tell you
+18:21
+your whole context layer needs to be
+18:22
+skills. That's obviously incorrect
+18:24
+because so much context isn't
+18:26
+skillshaped. But where you need stuff
+18:29
+done and so much of work is about
+18:32
+processing and going on to the next
+18:33
+thing. Skills are often a really handy
+18:36
+way to document that as long as you do
+18:38
+so in a way that an agent can call in a
+18:41
+context efficient way a particular
+18:43
+correct skill and get a particular
+18:45
+correct result and as long as humans can
+18:47
+also read it which is one of the
+18:48
+powerful things about markdown. It's
+18:50
+both agent and human readable. I want to
+18:52
+suggest for you that high-erforming
+18:53
+teams have three tiers for the way they
+18:56
+handle skills. Tier one are what I call
+18:59
+standard skills. They're pretty
+19:00
+consistent across the organization.
+19:01
+Brand voice goes in here. Formatting
+19:04
+rules, approved templates, you get the
+19:05
+idea. The thing we do the same all the
+19:07
+time. Those skills are very consistent
+19:10
+and team and enterprise accounts in a
+19:12
+lot of AI including claude uh I think
+19:14
+co-pilot does this. You can provision
+19:16
+those skills widely, right? You can say
+19:18
+our brand voice is this. This is our
+19:20
+brand voice skill. Everybody use it.
+19:22
+Makes perfect sense. A lot of people are
+19:24
+doing it. If you're not doing it, think
+19:25
+about doing it. Number two, methodology
+19:28
+skills. That's the second tier. This is
+19:30
+how your org or your team performs high
+19:33
+value work. And you want to do it
+19:35
+predictably. It's like how you structure
+19:37
+your client deliverables or how the
+19:38
+senior practitioners tend to get their
+19:40
+work done. What makes their craft tick.
+19:42
+Think of tier 2 skills. Think of these
+19:44
+methodology skills as what are the
+19:46
+things you would want to communicate to
+19:48
+a new hire that would take them months
+19:50
+to learn otherwise. That's a good
+19:52
+example of something that should be a
+19:54
+tier 2 skill. And by the way, that is
+19:56
+not something that is easy for an
+19:58
+enterprise admin to roll out because
+19:59
+enterprise admins do not tend to be
+20:01
+privy to the kinds of skills that are
+20:04
+tier 2 highcraft methodology skills.
+20:07
+Those tend to live inside senior
+20:09
+practitioners heads on individual teams
+20:11
+across your company and they need to get
+20:13
+out of those heads and into something
+20:15
+that is more sharable because that is
+20:17
+often where there's a lot of alpha right
+20:19
+if you can have the practitioner skill
+20:21
+from the most skilled product person on
+20:23
+the team the rest of the PM team would
+20:25
+benefit ditto engineering ditto ditto
+20:27
+customer success you get the idea now
+20:29
+tier three and this is something that a
+Descriptions as routing signals, outputs as contracts
+20:31
+lot of us are doing it's personal
+20:32
+workflow skills things that we do that
+20:34
+are sort of under the desk that help us
+20:36
+with our dayto today. We need something
+20:38
+that is maybe team legible at best, but
+20:40
+we're not actually surfacing this for
+20:42
+org productivity. One of the things I
+20:44
+want to caution you about when you come
+20:46
+to tier three skills is that it will be
+20:49
+tempting to keep them just on your
+20:51
+laptop, right? Just under the desk, just
+20:52
+in a downloads folder somewhere. Please
+20:54
+try not to do that. And the reason why
+20:57
+is that you don't know when you're going
+20:59
+to be on vacation or you're going to be
+21:00
+sick or something's going to happen at
+21:02
+work and you're going to wish somebody
+21:04
+could use the tool the way you designed
+21:06
+it to be used and get the job done and
+21:08
+instead they're going to have to dig
+21:09
+around and swear and ask for your
+21:11
+password and who knows what to get the
+21:12
+skill work. You want to think more and
+21:14
+more and more systemically. Think of
+21:16
+your world as essentially actions or
+21:19
+processes that skills can capture
+21:22
+reliably that humans or agents can read.
+21:25
+And then what is the level of access you
+21:27
+want for that expertise? Skills
+21:30
+essentially encode expertise. Now you
+21:32
+might be wondering when there's so many
+21:34
+skills marketplaces, when there's lots
+21:35
+of skills githubs, why should Nate start
+21:37
+another one? It's a fair question. I
+21:39
+think the simplest answer is this. We
+21:41
+have lots and lots of skills. If you are
+21:43
+a technical engineer, we have lots and
+21:45
+lots of sort of domain starter pack
+21:47
+skills. What I think we're missing is
+21:50
+domainspecific skills for solving real
+21:52
+problems. So when I give examples of
+21:54
+like the the Texas property guy who's
+21:56
+doing rent rolls analysis, that is a
+21:58
+domain specific skill, that is something
+22:00
+that you are not likely to find kicking
+22:03
+around a random GitHub repo. And so I
+22:06
+think that one of the interesting
+22:07
+opportunities because we have such a
+22:09
+wide variety of domains represented
+22:12
+inside the community is to say let's all
+22:14
+get together and let's share the skills
+22:17
+that we are finding useful that really
+22:19
+add an extraordinary amount of value for
+22:22
+us and then let's all trade our baseball
+22:25
+cards right and get the skills that we
+22:27
+need and start to learn from each other.
+22:29
+This is exactly the approach that we
+Three-tier skill architecture for teams
+22:31
+took when we put open brain over on
+22:33
+GitHub and this is actually going to
+22:34
+live as a section of open brain. So if
+22:36
+you use OpenBrain, this is going to
+22:38
+integrate right into OpenBrain for you
+22:40
+and it's going to be super easy. It'll
+22:41
+be in the same GitHub repo and you can
+22:43
+call it in. Not going to be a problem.
+22:45
+You know, Simon Willis wrote back in
+22:46
+October that he thought skills were be
+22:48
+were going to be a bigger deal than MCP.
+22:50
+I think that he may be right, but right
+22:53
+now I don't think we have the fluency to
+22:55
+make that happen. And part of why I'm
+22:57
+making this video is I think that we are
+22:59
+in particular sleeping on where skills
+23:01
+need to evolve to, where our fluency at
+23:03
+creating skills needs to evolve to in
+23:05
+order to get to a point where we have
+23:08
+skills that are a truly actionable
+23:10
+context substrate for agents and humans.
+23:13
+That's where I want to go and that's why
+23:15
+I'm creating a community skills
+23:16
+repository. It's it's just a
+23:18
+practitioner library. It has knowledge
+23:19
+work. It's organized by workflow type.
+23:22
+You'll have an agent readability bar
+23:24
+that's applied consistently for every
+23:25
+skill in there. So they'll be vetted and
+23:27
+we're going to get into stuff like
+23:28
+competitive analysis, like financial
+23:29
+model review, like deal memo drafting,
+23:31
+like research synthesis, like meeting
+23:33
+synthesis, stuff that's very, very
+23:35
+specific. And we're going to be as
+23:38
+widespread in our coverage as possible
+23:40
+so that you can invoke from the command
+23:42
+line the skill that you care about so
+23:43
+that you can add from that skill pack
+23:46
+only the skills that you need and feel
+23:48
+confident that you've got something that
+23:49
+has some of that agent readability bar
+23:51
+built into it. Now, I want to leave you
+23:53
+with a few actionable tips. I think it's
+23:55
+often easy to get lost here. Number one,
+23:57
+if you are struggling with where you
+23:59
+start on skills, if all of this GitHub
+24:01
+repo stuff feels over your head, look at
+24:03
+something that you have repetitively
+24:05
+done and ask yourself, if I do this once
+24:08
+a week, twice a week, three times a
+24:10
+week, can I get this turned into a
+24:12
+skill? And then talk with your AI, your
+24:15
+preferred AI. Honestly, they can all do
+24:16
+skills now. And ask it to help you make
+24:18
+a skill.mmarkdown from the conversations
+24:21
+you've had and feed it that info from
+24:23
+those conversations. is what you thought
+24:24
+went well, what you thought you didn't,
+24:25
+and be off to the races. Now, if you're
+24:27
+a little farther along, if you're like,
+24:28
+"No, I get it. I'm at the GitHub repo. I
+The community skills repository announcement
+24:30
+can't wait." Great. Think on your terms
+24:33
+about your agent readable skills and ask
+24:35
+yourself, are you thinking through those
+24:36
+handoffs? Are you thinking through the
+24:38
+eventual output? Are you structuring
+24:39
+your skills more around the idea of a
+24:41
+contract? Those are things that I think
+24:43
+we are sleeping on right now for skills
+24:45
+and I think we need to take them more
+24:46
+seriously. If you are looking at the
+24:47
+teams or enterprise level, think about
+24:49
+the taring I talked about, right? Is
+24:50
+this an individual scale? Is this
+24:52
+something that represents the expertise
+24:54
+of the best person on your team? Is it
+24:56
+more something that is just a brand
+24:57
+standard that needs to be there
+24:58
+everywhere in the or that shapes how you
+25:00
+deploy it and how you think about it? I
+25:02
+am going to come back to something I
+25:03
+mentioned earlier in this video. The
+25:05
+thing that matters about skills is that
+25:08
+they compound. Skills essentially
+25:10
+represent a learned record of successful
+25:13
+execution of a workflow that an agent or
+25:15
+a human can follow. And if you
+25:17
+continually evolve it as you get better
+25:19
+at doing that thing, you are going to
+25:22
+have a rememberable way for future
+25:27
+smarter agents and for your team in the
+25:29
+future to execute that skill along the
+25:32
+way to execute and build without going
+25:35
+back to prompting. You are going to free
+25:37
+yourself from copy paste hell. And
+25:39
+that's really what skills do, right?
+25:40
+Prompts just sort of evaporate once
+25:42
+they're gone from the conversation.
+25:43
+They're gone. You have to repaste them.
+25:44
+you have to dig in the prompt library.
+25:47
+Skills are what persists and so getting
+25:49
+them right, especially in a world where
+25:51
+agents are now calling skills more than
+25:52
+ever. That matters. Good luck. I hope
+25:55
+these tips on skills are useful. I did
+25:57
+not find a lot. I dug around for this
+25:59
+and so many of the tips on skills are
+Skills are what persists
+26:01
+focused on individual productivity. I
+26:02
+wanted to cover the whole gamut here. I
+26:04
+wanted to get into teams. I wanted to
+26:05
+get into agents. I wanted to get into
+26:06
+specific things that people are finding
+26:08
+break and things that people are finding
+26:10
+work. So stick this transcript into chat
+26:13
+GPG if it's been a lot. Parse it through
+26:15
+and then come back with something
+26:16
+actionable you can take away this week.
+

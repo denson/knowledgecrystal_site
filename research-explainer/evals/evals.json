@@ -1,0 +1,23 @@
+{
+  "skill_name": "research-explainer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hey, I just stumbled on this project folder. What's all this about? Can you explain what the research is?",
+      "expected_output": "A warm, accessible 2-3 paragraph explanation of the research that avoids jargon, uses a relatable analogy or framing, and ends by asking the user about their role and a tough project they're working on. Should NOT list all contributions or dump the abstract.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm a security engineer at a fintech company. We do quarterly security audits of our microservices platform (~200 services). My biggest headache is making sure we haven't missed anything in the audit — there's always something that slips through. Someone told me this research might be relevant to what I do?",
+      "expected_output": "Should recognize that security auditing is a classic 'hard search, easy verify' problem from the paper's taxonomy. Should connect the blind-spot concept to how current audit tools work (static analysis misses runtime paths, dynamic testing misses unused code paths). Should suggest what 'structurally different data' might look like for security audits (dependency graphs, permission chains, data flow maps). Should be honest that 200 microservices is large enough that the scaling effect applies.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm a patent attorney. I spend most of my time doing prior art searches — trying to find every existing patent or publication that's relevant to a new patent application. It's exhausting because you never know if you've found everything. What's this research about and does it relate to what I do?",
+      "expected_output": "Should immediately recognize prior art search as a near-perfect match for the paper's framework — large search space, high cost of missing something, verification is easier than discovery. Should explain the research accessibly first, then map it to patent law specifically. Should identify that keyword search (current approach) has the same blind spot as grep in code — it only finds things that share text with the query. Should suggest what structurally different data sources might look like (citation graphs, classification hierarchies, inventor networks). Should use legal vocabulary naturally.",
+      "files": []
+    }
+  ]
+}

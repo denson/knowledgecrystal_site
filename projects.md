@@ -6,6 +6,23 @@ permalink: /projects.html
 
 # Projects
 
-I'm currently putting together case studies and write-ups of my work in LLM systems, GraphRAG, and AI reliability engineering. Check back soon — or follow along on the [blog](/blog.html) for updates.
+<div class="grid">
+  <div class="card">
+    <h3>Hypergraph Code Explorer (HCE)</h3>
+    <p>A tool that transforms codebases into interactive, queryable maps. HCE uses tree-sitter to parse code into a hypergraph — where a single edge groups multiple related entities (caller, callee, argument types, return type) as one relationship, rather than decomposing them into pairwise connections that lose information.</p>
+    <p>Supports 9 languages. Provides MCP tools so AI agents like Claude can explore codebase structure in milliseconds without consuming LLM tokens for parsing. Captures seven relationship types: CALLS, IMPORTS, DEFINES, INHERITS, SIGNATURE, RAISES, and DECORATES.</p>
+    <p>The research behind HCE showed that combining structural traversal with text search finds things neither approach finds alone — with the effect scaling dramatically on larger codebases.</p>
+    <div>
+      <span class="card-tag">Python</span>
+      <span class="card-tag">Hypergraphs</span>
+      <span class="card-tag">AST Analysis</span>
+      <span class="card-tag">MCP Tools</span>
+      <span class="card-tag">tree-sitter</span>
+    </div>
+    <p style="margin-top: 1.5rem;">
+      <a href="https://github.com/denson/hypergraph_code_explorer" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.95rem;">View on GitHub →</a>
+    </p>
+  </div>
+</div>
 
-In the meantime, you can find some of my work on [GitHub](https://github.com/denson).
+More projects coming soon. In the meantime, you can find my other work on [GitHub](https://github.com/denson).

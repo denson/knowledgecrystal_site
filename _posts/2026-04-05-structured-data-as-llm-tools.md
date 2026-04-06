@@ -28,7 +28,7 @@ This also explains what LLMs actually are in this hierarchy: they represent a di
 
 But an LLM is much less diverse as a tool *for another LLM*. Running the same model twice with slightly different prompts explores roughly the same region of the solution space. The runs are highly correlated — both LLMs make the same kind of exhaustive, unpruned traversals. To get genuine diversity for an LLM, you need tools that retrieve and structure information in fundamentally different ways.
 
-<img src="/assets/images/human_engineer_as_ensemble_predictor.jpg" alt="The Human Engineer as Ensemble Predictor — experienced engineers break the correlation structure far more than additional LLM runs" style="width: 30%; max-width: 100%;">
+<img src="/assets/images/human_engineer_as_ensemble_predictor.jpg" alt="The Human Engineer as Ensemble Predictor — experienced engineers break the correlation structure far more than additional LLM runs" style="width: 45%; max-width: 100%;">
 
 ## The experiment that showed this
 
@@ -66,7 +66,7 @@ The critical point: if you've confirmed the information content in Stage 1, a fa
 
 Not all tasks benefit equally from tool diversity. I developed a taxonomy based on two axes — how hard it is to *search* for answers and how hard it is to *verify* them:
 
-<img src="/assets/images/task_taxonomy_search_vs_verification.jpg" alt="Task Classes by Search vs Verification Difficulty — a 2x2 matrix showing five classes of problem difficulty" style="width: 30%; max-width: 100%;">
+<img src="/assets/images/task_taxonomy_search_vs_verification.jpg" alt="Task Classes by Search vs Verification Difficulty — a 2x2 matrix showing five classes of problem difficulty" style="width: 45%; max-width: 100%;">
 
 **Class I — Easy search, easy verification.** Looking up a single function definition. One tool run suffices. Stacking adds little.
 

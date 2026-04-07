@@ -21,6 +21,7 @@ permalink: /projects.html
     </div>
     <p style="margin-top: 1.5rem;">
       <a href="https://github.com/denson/hypergraph_code_explorer" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.95rem;">View on GitHub →</a>
+      <a href="/blog/structured-data-as-llm-tools/" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.95rem; margin-left: 0.5rem;">Read the Article →</a>
     </p>
   </div>
   <div class="card">
@@ -38,6 +39,7 @@ permalink: /projects.html
     </div>
     <p style="margin-top: 1.5rem;">
       <a href="https://github.com/denson/ariadne-thread" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.95rem;">View on GitHub →</a>
+      <a href="/blog/ariadne-thread-document-pipeline/" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.95rem; margin-left: 0.5rem;">Read the Article →</a>
     </p>
   </div>
 </div>

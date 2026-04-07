@@ -138,7 +138,7 @@ If the reader says "keep going" or "next" without a question, proceed to the nex
 
 At any point, the person might ask questions, push back, or want to go deeper on something. Handle it naturally:
 
-- Answer from the paper content first — read specific sections of `hce_research/PAPER_OUTLINE.md` as needed
+- Answer from the paper content first — read specific sections of `C:\Users\denso\claude_projects\hypergraphs\hce_research\PAPER_OUTLINE.md` as needed
 - Connect back to their domain and vocabulary
 - If you don't know, say so
 - After answering, pick up where you left off
